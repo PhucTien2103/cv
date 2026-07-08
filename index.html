@@ -1,0 +1,695 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pham Phuc Tien - CV</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700&family=Source+Sans+3:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
+  <style>
+    :root {
+      --ink: #0f0f0f;
+      --rule: #aaa;
+      --soft: #f5f5f5;
+      --muted: #333;
+      --light: #666;
+      --border: #ddd;
+      --accent: #1a1a1a;
+    }
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Source Sans 3', sans-serif;
+      font-size: 12px;
+      color: var(--ink);
+      background: #6b6b6b;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 28px 20px;
+      gap: 12px;
+    }
+
+    .export-bar {
+      width: 760px;
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    .export-btn {
+      background: #1a1a1a;
+      color: white;
+      border: none;
+      padding: 8px 18px;
+      font-family: 'Source Sans 3', sans-serif;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: opacity 0.2s;
+    }
+
+    .export-btn:hover {
+      opacity: 0.7;
+    }
+
+    .page {
+      width: 760px;
+      background: white;
+      box-shadow: 0 4px 32px rgba(0, 0, 0, 0.22);
+      padding: 44px 56px 48px;
+    }
+
+    /* HEADER */
+    .hdr {
+      text-align: center;
+      border-bottom: 2px solid #0f0f0f;
+      padding-bottom: 14px;
+      margin-bottom: 14px;
+    }
+
+    .hdr-name {
+      font-family: 'EB Garamond', serif;
+      font-size: 32px;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      color: var(--ink);
+      margin-bottom: 4px;
+    }
+
+    .hdr-role {
+      font-family: 'EB Garamond', serif;
+      font-size: 14.5px;
+      color: #444;
+      margin-bottom: 10px;
+      letter-spacing: 0.02em;
+    }
+
+    .hdr-contact {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 4px 16px;
+      font-size: 11px;
+      color: var(--muted);
+    }
+
+    .hdr-contact a {
+      color: var(--muted);
+      text-decoration: none;
+    }
+
+    .hdr-contact a:hover {
+      color: #000;
+    }
+
+    /* SECTION */
+    .section {
+      margin-bottom: 13px;
+    }
+
+    .sec-title {
+      font-family: 'EB Garamond', serif;
+      font-size: 13px;
+      font-weight: 700;
+      color: #0f0f0f;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      border-bottom: 1px solid #0f0f0f;
+      padding-bottom: 3px;
+      margin-bottom: 9px;
+    }
+
+    /* SUMMARY */
+    .summary-text {
+      font-family: 'EB Garamond', serif;
+      font-size: 13px;
+      line-height: 1.7;
+      color: var(--ink);
+      text-align: justify;
+    }
+
+    /* EDUCATION */
+    .entry {
+      margin-bottom: 8px;
+    }
+
+    .e-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 8px;
+      margin-bottom: 1px;
+    }
+
+    .e-org {
+      font-family: 'EB Garamond', serif;
+      font-size: 13.5px;
+      font-weight: 700;
+      color: var(--ink);
+    }
+
+    .e-date {
+      font-family: 'Source Sans 3', sans-serif;
+      font-size: 10.5px;
+      color: var(--light);
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+
+    .e-sub {
+      font-size: 11.5px;
+      color: #444;
+      font-weight: 600;
+      margin-bottom: 3px;
+    }
+
+    .e-bullets {
+      list-style: none;
+      padding-left: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 1px;
+    }
+
+    .e-bullets li {
+      font-size: 11.5px;
+      color: #333;
+      line-height: 1.55;
+      padding-left: 14px;
+      position: relative;
+    }
+
+    .e-bullets li::before {
+      content: '-';
+      position: absolute;
+      left: 0;
+      color: var(--rule);
+      font-size: 10px;
+      top: 2px;
+    }
+
+    .e-bullets li strong {
+      color: var(--ink);
+      font-weight: 600;
+    }
+
+    /* GPA badge */
+    .gpa-inline {
+      display: inline-block;
+      font-family: 'Source Sans 3', sans-serif;
+      font-size: 11px;
+      font-weight: 600;
+      background: var(--soft);
+      border: 1px solid var(--border);
+      padding: 1px 8px;
+      color: #333;
+      margin-left: 4px;
+    }
+
+    /* PROJECTS */
+    .proj {
+      margin-bottom: 10px;
+    }
+
+    .proj:last-child {
+      margin-bottom: 0;
+    }
+
+    .p-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 8px;
+      margin-bottom: 1px;
+    }
+
+    .p-title {
+      font-family: 'EB Garamond', serif;
+      font-size: 13.5px;
+      font-weight: 700;
+      color: var(--ink);
+    }
+
+    .p-links {
+      display: flex;
+      gap: 10px;
+      flex-shrink: 0;
+    }
+
+    .p-link {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 9px;
+      color: var(--muted);
+      text-decoration: none;
+      border-bottom: 1px solid var(--border);
+      white-space: nowrap;
+      transition: color 0.15s;
+    }
+
+    .p-link:hover {
+      color: #000;
+      border-color: #000;
+    }
+
+    .p-sub {
+      font-size: 11px;
+      color: var(--light);
+      margin-bottom: 3px;
+    }
+
+    .p-stack {
+      font-size: 10.5px;
+      color: var(--muted);
+      margin-bottom: 4px;
+    }
+
+    .p-stack span {
+      font-weight: 600;
+      color: #333;
+    }
+
+    .p-bullets {
+      list-style: none;
+      padding-left: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 1px;
+    }
+
+    .p-bullets li {
+      font-size: 11.5px;
+      color: #333;
+      line-height: 1.55;
+      padding-left: 14px;
+      position: relative;
+    }
+
+    .p-bullets li::before {
+      content: '-';
+      position: absolute;
+      left: 0;
+      color: var(--rule);
+      font-size: 10px;
+      top: 2px;
+    }
+
+    .p-bullets li strong {
+      color: var(--ink);
+      font-weight: 600;
+    }
+
+    /* INFO GRID */
+    .info-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2px 24px;
+    }
+
+    .info-row {
+      display: flex;
+      gap: 8px;
+      font-size: 11.5px;
+      line-height: 1.6;
+    }
+
+    .info-label {
+      font-weight: 600;
+      color: var(--ink);
+      min-width: 56px;
+      flex-shrink: 0;
+    }
+
+    .info-val {
+      color: var(--muted);
+    }
+
+    .info-val a {
+      color: var(--muted);
+      text-decoration: none;
+    }
+
+    .info-val a:hover {
+      color: #000;
+    }
+
+    /* SKILLS */
+    .sk-list {
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+    }
+
+    .sk-row {
+      display: flex;
+      gap: 6px;
+      font-size: 11.5px;
+      line-height: 1.5;
+    }
+
+    .sk-label {
+      font-weight: 600;
+      color: var(--ink);
+      white-space: nowrap;
+      min-width: 72px;
+      flex-shrink: 0;
+    }
+
+    .sk-val {
+      color: var(--muted);
+    }
+
+    .proj-rule {
+      border: none;
+      border-top: 1px solid var(--border);
+      margin: 9px 0;
+    }
+
+    /* OTHER PROJECTS TABLE */
+    .other-proj-list {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .op-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 12px;
+    }
+
+    .op-left {
+      display: flex;
+      align-items: baseline;
+      gap: 10px;
+      flex: 1;
+      min-width: 0;
+    }
+
+    .op-title {
+      font-family: 'EB Garamond', serif;
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--ink);
+      white-space: nowrap;
+    }
+
+    .op-desc {
+      font-size: 11px;
+      color: var(--light);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .op-right {
+      display: flex;
+      gap: 10px;
+      flex-shrink: 0;
+      align-items: center;
+    }
+
+    .op-tag {
+      font-family: 'Source Sans 3', sans-serif;
+      font-size: 9.5px;
+      font-weight: 600;
+      color: var(--light);
+      background: var(--soft);
+      border: 1px solid var(--border);
+      padding: 1px 7px;
+      white-space: nowrap;
+    }
+
+    /* CERTIFICATIONS */
+    .cert-row {
+      display: flex;
+      gap: 20px;
+      font-size: 11.5px;
+      color: #333;
+    }
+
+    .cert-item {
+      display: flex;
+      gap: 5px;
+      align-items: baseline;
+    }
+
+    .cert-label {
+      color: var(--light);
+    }
+
+    .cert-score {
+      font-weight: 600;
+      color: var(--ink);
+    }
+
+    @media print {
+      body {
+        background: white;
+        padding: 0;
+        display: block;
+      }
+
+      .page {
+        box-shadow: none;
+        width: 210mm;
+        min-height: 0;
+        padding: 14mm 16mm 14mm;
+        font-size: 11px;
+      }
+
+      .export-bar {
+        display: none;
+      }
+
+      .hdr {
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+      }
+
+      .hdr-name { font-size: 28px; }
+      .hdr-role { font-size: 13px; margin-bottom: 7px; }
+
+      .section { margin-bottom: 10px; }
+      .sec-title { margin-bottom: 7px; }
+
+      .summary-text { font-size: 12px; line-height: 1.6; }
+
+      .proj { margin-bottom: 8px; }
+      .proj-rule { margin: 7px 0; }
+
+      .p-bullets li, .e-bullets li { font-size: 11px; line-height: 1.5; }
+      .p-stack { font-size: 10px; }
+      .p-sub { font-size: 10px; }
+
+      .sk-row { font-size: 11px; }
+      .op-title { font-size: 12px; }
+      .op-desc { font-size: 10px; }
+
+      @page {
+        size: A4;
+        margin: 0;
+      }
+
+      * {
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="export-bar">
+    <button class="export-btn" onclick="window.print()">Export PDF</button>
+  </div>
+
+  <div class="page">
+
+    <!-- HEADER -->
+    <div class="hdr">
+      <div class="hdr-name">Pham Phuc Tien</div>
+      <div class="hdr-role">Fullstack Web Developer &nbsp;·&nbsp; Year 3 Student &nbsp;·&nbsp; Open to Internship</div>
+      <div class="hdr-contact">
+        <span><a href="tel:+84795865240">079 586 5240</a></span>
+        <span>·</span>
+        <span><a href="mailto:pptien.lmht@gmail.com">pptien.lmht@gmail.com</a></span>
+        <span>·</span>
+        <span><a href="https://github.com/PhucTien2103" target="_blank">github.com/PhucTien2103</a></span>
+        <span>·</span>
+        <span><a href="https://www.linkedin.com/in/ph%C3%BAc-ti%E1%BA%BFn-ph%E1%BA%A1m-b6a0ab408/" target="_blank">LinkedIn</a></span>
+        <span>·</span>
+        <span>Ho Chi Minh City, Vietnam</span>
+      </div>
+    </div>
+
+    <!-- PROFILE -->
+    <div class="section">
+      <div class="sec-title">Profile</div>
+        <p class="summary-text">
+          Third-year Software Engineering student at HCMUTE with hands-on experience building fullstack web applications using React, Node.js/Express, MongoDB, Spring Boot, and Java Servlet/JSP. Worked on academic and team projects involving authentication, role-based access, payment/order workflows, admin dashboards, staff scheduling, and database-backed REST APIs. Seeking an internship/fresher opportunity in frontend, backend, or fullstack web development.
+        </p>
+    </div>
+
+    <!-- EDUCATION -->
+    <div class="section">
+      <div class="sec-title">Education</div>
+      <div class="entry">
+        <div class="e-head">
+          <div class="e-org">Ho Chi Minh City University of Technology and Education</div>
+          <div class="e-date">Sep 2023 - Present</div>
+        </div>
+        <div class="e-sub">B.Eng. Information Technology · Major: Software Engineering</div>
+        <ul class="e-bullets">
+          <li>Completed coursework and team projects in web programming, software engineering, database systems, cloud fundamentals, and Java/JavaScript-based application development.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- PROJECTS -->
+    <div class="section">
+      <div class="sec-title">Projects</div>
+
+      <!-- SmartZone Store -->
+      <div class="proj">
+        <div class="p-head">
+          <div class="p-title">SmartZone Store - E-commerce Web Application</div>
+          <div class="p-links">
+            <a class="p-link" href="https://github.com/Ginas559/website-chatting" target="_blank">Backend</a>
+            <a class="p-link" href="https://github.com/Ginas559/website-chatting-FE" target="_blank">Frontend</a>
+            <a class="p-link" href="https://github.com/Ginas559/website-chatting-ADMIN" target="_blank">Admin</a>
+          </div>
+        </div>
+        <div class="p-stack"><span>Stack:</span> React · Redux Toolkit · Node.js · Express · MongoDB · Socket.IO · JWT · VNPay · Nodemailer</div>
+        <ul class="p-bullets">
+          <li>Implemented <strong>forgot-password OTP</strong> flow and documented/tested the feature with Postman collection.</li>
+          <li>Built <strong>checkout and order tracking</strong> APIs/UI; improved VNPay payment status synchronization and retry behavior.</li>
+          <li>Added <strong>admin order management</strong>, delivery QR verification, voucher selection, loyalty points, and refund handling for canceled orders.</li>
+        </ul>
+      </div>
+      <hr class="proj-rule" />
+
+      <!-- Cinema -->
+      <div class="proj">
+        <div class="p-head">
+          <div class="p-title">Cinema Management Web Application</div>
+          <div class="p-links">
+            <a class="p-link" href="https://github.com/Minh1billion/cinema-management-web-frontend" target="_blank">Frontend</a>
+            <a class="p-link" href="https://github.com/Minh1billion/cinema-management-web-backend" target="_blank">Backend</a>
+          </div>
+        </div>
+        <div class="p-stack"><span>Stack:</span> React · Axios · Spring Boot · Spring Data JPA · Spring Security · SQL Server · JWT</div>
+        <ul class="p-bullets">
+          <li>Developed <strong>staff shift scheduling</strong> features, including staff registration/cancellation and weekly schedule operations.</li>
+          <li>Built and refined <strong>MyShiftTimeline</strong> UI so staff can view registered shifts clearly by week/time.</li>
+          <li>Updated Spring Boot shift APIs, service logic, repository usage, and custom exception handling for clearer API responses.</li>
+        </ul>
+      </div>
+      <hr class="proj-rule" />
+
+      <!-- TimeLux -->
+      <div class="proj">
+        <div class="p-head">
+          <div class="p-title">TimeLux Watch Store - Fullstack E-commerce Platform</div>
+          <div class="p-links">
+            <a class="p-link" href="https://github.com/PhucTien2103/Baitap-06-20-05-2026-website-TimeLux-FE" target="_blank">Frontend</a>
+            <a class="p-link" href="https://github.com/PhucTien2103/Baitap-06-20-05-2026-website-TimeLux-BE" target="_blank">Backend</a>
+          </div>
+        </div>
+        <div class="p-stack"><span>Stack:</span> React · Vite · Redux Toolkit · Ant Design · Tailwind CSS · Node.js · Express · MongoDB · JWT</div>
+        <ul class="p-bullets">
+          <li>Built authenticated storefront with product catalog, search, filters, sorting, pagination, product detail, cart, checkout, and order flows.</li>
+          <li>Implemented role-based flows for <strong>Admin, Moderator, and User</strong>, including protected routes and user management screens.</li>
+          <li>Developed backend APIs using Express, Mongoose models, JWT authentication, validators, rate limiting, and OTP email flow.</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- OTHER PROJECTS -->
+    <div class="section">
+      <div class="sec-title">Other Projects</div>
+      <div class="other-proj-list">
+
+        <div class="op-row">
+          <div class="op-left">
+            <div class="op-title">Employee Leave Management System</div>
+            <div class="op-desc">Leave request/approval system with notifications, cancellation, and admin statistics</div>
+          </div>
+          <div class="op-right">
+            <span class="op-tag">Java Servlet · JPA</span>
+            <a class="p-link" href="https://github.com/Ginas559/ccvmtptpm-landing-page" target="_blank">GitHub</a>
+          </div>
+        </div>
+
+        <div class="op-row">
+          <div class="op-left">
+            <div class="op-title">Shoes Shop</div>
+            <div class="op-desc">Java web e-commerce app with VNPay, product reviews, wishlist, and recently viewed products</div>
+          </div>
+          <div class="op-right">
+            <span class="op-tag">Servlet/JSP · Hibernate</span>
+            <a class="p-link" href="https://github.com/Ginas559/shoes-shop" target="_blank">GitHub</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- SKILLS -->
+    <div class="section">
+      <div class="sec-title">Technical Skills</div>
+      <div class="sk-list">
+        <div class="sk-row">
+          <span class="sk-label">Language</span>
+          <span class="sk-val">JavaScript, Java, SQL</span>
+        </div>
+        <div class="sk-row">
+          <span class="sk-label">Frontend</span>
+          <span class="sk-val">React, Vite, Redux Toolkit, React Router, Axios, Ant Design, Tailwind CSS, Bootstrap</span>
+        </div>
+        <div class="sk-row">
+          <span class="sk-label">Backend</span>
+          <span class="sk-val">Node.js, Express, Spring Boot, Java Servlet/JSP, Spring Data JPA, Spring Security, Hibernate/JPA</span>
+        </div>
+        <div class="sk-row">
+          <span class="sk-label">Database</span>
+          <span class="sk-val">MongoDB, SQL Server, Mongoose, JPA/Hibernate ORM</span>
+        </div>
+        <div class="sk-row">
+          <span class="sk-label">Tools</span>
+          <span class="sk-val">Git, GitHub, Postman, Docker basics, AWS Academy labs, VNPay integration, JWT authentication</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- CERTIFICATIONS -->
+    <div class="section">
+      <div class="sec-title">Certifications</div>
+      <div class="entry">
+        <div class="e-sub" style="margin-bottom:6px;">
+          AWS Academy Graduate Training Badges - Amazon Web Services Training and Certification
+        </div>
+        <div style="font-size:11.5px; color:#333; line-height:1.55;">
+          Cloud Foundations, Cloud Developing, Cloud Web Application Builder,
+          Cloud Data Pipeline Builder, Data Engineering, Microservices and CI/CD Pipeline Builder
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
