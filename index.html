@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Pham Phuc Tien - CV</title>
   <link
-    href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700&family=Source+Sans+3:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
     rel="stylesheet">
   <style>
     :root {
@@ -28,7 +28,7 @@
     }
 
     body {
-      font-family: 'Source Sans 3', sans-serif;
+      font-family: 'Poppins', Arial, sans-serif;
       font-size: 12px;
       color: var(--ink);
       background: #6b6b6b;
@@ -51,7 +51,7 @@
       color: white;
       border: none;
       padding: 8px 18px;
-      font-family: 'Source Sans 3', sans-serif;
+      font-family: 'Poppins', Arial, sans-serif;
       font-size: 11px;
       font-weight: 600;
       letter-spacing: 0.08em;
@@ -73,35 +73,38 @@
 
     /* HEADER */
     .hdr {
-      text-align: center;
-      border-bottom: 2px solid #0f0f0f;
-      padding-bottom: 14px;
-      margin-bottom: 14px;
+      text-align: left;
+      border-bottom: none;
+      padding-bottom: 5px;
+      margin-bottom: 8px;
     }
 
     .hdr-name {
-      font-family: 'EB Garamond', serif;
-      font-size: 32px;
+      font-family: 'Poppins', Arial, sans-serif;
+      font-size: 27px;
       font-weight: 700;
-      letter-spacing: 0.04em;
+      letter-spacing: 0;
       color: var(--ink);
-      margin-bottom: 4px;
+      line-height: 1.15;
+      margin-bottom: 2px;
+      text-transform: uppercase;
     }
 
     .hdr-role {
-      font-family: 'EB Garamond', serif;
-      font-size: 14.5px;
-      color: #444;
-      margin-bottom: 10px;
-      letter-spacing: 0.02em;
+      font-family: 'Poppins', Arial, sans-serif;
+      font-size: 12.5px;
+      font-weight: 600;
+      color: #111;
+      margin-bottom: 4px;
+      letter-spacing: 0;
     }
 
     .hdr-contact {
       display: flex;
-      justify-content: center;
+      justify-content: flex-start;
       flex-wrap: wrap;
       gap: 4px 16px;
-      font-size: 11px;
+      font-size: 9.5px;
       color: var(--muted);
     }
 
@@ -116,28 +119,28 @@
 
     /* SECTION */
     .section {
-      margin-bottom: 13px;
+      margin-bottom: 10px;
     }
 
     .sec-title {
-      font-family: 'EB Garamond', serif;
+      font-family: 'Poppins', Arial, sans-serif;
       font-size: 13px;
       font-weight: 700;
       color: #0f0f0f;
       text-transform: uppercase;
-      letter-spacing: 0.15em;
-      border-bottom: 1px solid #0f0f0f;
-      padding-bottom: 3px;
-      margin-bottom: 9px;
+      letter-spacing: 0;
+      border-bottom: 1.5px solid #0f0f0f;
+      padding-bottom: 2px;
+      margin-bottom: 6px;
     }
 
     /* SUMMARY */
     .summary-text {
-      font-family: 'EB Garamond', serif;
-      font-size: 13px;
-      line-height: 1.7;
+      font-family: 'Poppins', Arial, sans-serif;
+      font-size: 10.5px;
+      line-height: 1.5;
       color: var(--ink);
-      text-align: justify;
+      text-align: left;
     }
 
     /* EDUCATION */
@@ -154,51 +157,44 @@
     }
 
     .e-org {
-      font-family: 'EB Garamond', serif;
-      font-size: 13.5px;
+      font-family: 'Poppins', Arial, sans-serif;
+      font-size: 11.5px;
       font-weight: 700;
       color: var(--ink);
     }
 
     .e-date {
-      font-family: 'Source Sans 3', sans-serif;
-      font-size: 10.5px;
-      color: var(--light);
+      font-family: 'Poppins', Arial, sans-serif;
+      font-size: 9.5px;
+      font-weight: 600;
+      color: var(--ink);
       white-space: nowrap;
       flex-shrink: 0;
     }
 
     .e-sub {
-      font-size: 11.5px;
+      font-size: 10px;
       color: #444;
       font-weight: 600;
       margin-bottom: 3px;
     }
 
     .e-bullets {
-      list-style: none;
-      padding-left: 0;
+      list-style: disc;
+      padding-left: 18px;
       display: flex;
       flex-direction: column;
       gap: 1px;
     }
 
     .e-bullets li {
-      font-size: 11.5px;
+      font-size: 10px;
       color: #333;
       line-height: 1.55;
-      padding-left: 14px;
-      position: relative;
+      padding-left: 0;
     }
 
-    .e-bullets li::before {
-      content: '-';
-      position: absolute;
-      left: 0;
-      color: var(--rule);
-      font-size: 10px;
-      top: 2px;
-    }
+    .e-bullets li::before { content: none; }
 
     .e-bullets li strong {
       color: var(--ink);
@@ -208,7 +204,7 @@
     /* GPA badge */
     .gpa-inline {
       display: inline-block;
-      font-family: 'Source Sans 3', sans-serif;
+      font-family: 'Poppins', Arial, sans-serif;
       font-size: 11px;
       font-weight: 600;
       background: var(--soft);
@@ -220,7 +216,7 @@
 
     /* PROJECTS */
     .proj {
-      margin-bottom: 10px;
+      margin-bottom: 7px;
     }
 
     .proj:last-child {
@@ -236,8 +232,8 @@
     }
 
     .p-title {
-      font-family: 'EB Garamond', serif;
-      font-size: 13.5px;
+      font-family: 'Poppins', Arial, sans-serif;
+      font-size: 11.5px;
       font-weight: 700;
       color: var(--ink);
     }
@@ -245,6 +241,14 @@
     .p-links {
       display: flex;
       gap: 10px;
+      flex-shrink: 0;
+    }
+
+    .p-date {
+      font-size: 9.5px;
+      font-weight: 600;
+      color: var(--ink);
+      white-space: nowrap;
       flex-shrink: 0;
     }
 
@@ -264,13 +268,13 @@
     }
 
     .p-sub {
-      font-size: 11px;
+      font-size: 9.5px;
       color: var(--light);
       margin-bottom: 3px;
     }
 
     .p-stack {
-      font-size: 10.5px;
+      font-size: 9.3px;
       color: var(--muted);
       margin-bottom: 4px;
     }
@@ -281,29 +285,21 @@
     }
 
     .p-bullets {
-      list-style: none;
-      padding-left: 0;
+      list-style: disc;
+      padding-left: 18px;
       display: flex;
       flex-direction: column;
       gap: 1px;
     }
 
     .p-bullets li {
-      font-size: 11.5px;
+      font-size: 9.8px;
       color: #333;
       line-height: 1.55;
-      padding-left: 14px;
-      position: relative;
+      padding-left: 0;
     }
 
-    .p-bullets li::before {
-      content: '-';
-      position: absolute;
-      left: 0;
-      color: var(--rule);
-      font-size: 10px;
-      top: 2px;
-    }
+    .p-bullets li::before { content: none; }
 
     .p-bullets li strong {
       color: var(--ink);
@@ -320,7 +316,7 @@
     .info-row {
       display: flex;
       gap: 8px;
-      font-size: 11.5px;
+      font-size: 9.8px;
       line-height: 1.6;
     }
 
@@ -399,15 +395,15 @@
     }
 
     .op-title {
-      font-family: 'EB Garamond', serif;
-      font-size: 13px;
+      font-family: 'Poppins', Arial, sans-serif;
+      font-size: 10.5px;
       font-weight: 700;
       color: var(--ink);
       white-space: nowrap;
     }
 
     .op-desc {
-      font-size: 11px;
+      font-size: 9.5px;
       color: var(--light);
       white-space: nowrap;
       overflow: hidden;
@@ -422,7 +418,7 @@
     }
 
     .op-tag {
-      font-family: 'Source Sans 3', sans-serif;
+      font-family: 'Poppins', Arial, sans-serif;
       font-size: 9.5px;
       font-weight: 600;
       color: var(--light);
@@ -436,7 +432,7 @@
     .cert-row {
       display: flex;
       gap: 20px;
-      font-size: 11.5px;
+      font-size: 10px;
       color: #333;
     }
 
@@ -455,6 +451,12 @@
       color: var(--ink);
     }
 
+    .cert-detail {
+      font-size: 9.5px;
+      color: #333;
+      line-height: 1.45;
+    }
+
     @media print {
       body {
         background: white;
@@ -466,9 +468,9 @@
         box-shadow: none;
         width: 210mm;
         min-height: 0;
-        padding: 10mm 16mm 6mm;
-        font-size: 11px;
-        zoom: 0.96;
+        padding: 9mm 12mm 7mm;
+        font-size: 10.5px;
+        zoom: 1;
       }
 
       .export-bar {
@@ -476,28 +478,28 @@
       }
 
       .hdr {
-        padding-bottom: 10px;
-        margin-bottom: 10px;
+        padding-bottom: 4px;
+        margin-bottom: 6px;
       }
 
-      .hdr-name { font-size: 28px; }
-      .hdr-role { font-size: 13px; margin-bottom: 7px; }
+      .hdr-name { font-size: 26px; }
+      .hdr-role { font-size: 12px; margin-bottom: 4px; }
 
       .section { margin-bottom: 9px; }
-      .sec-title { margin-bottom: 6px; }
+      .sec-title { margin-bottom: 5px; }
 
-      .summary-text { font-size: 12px; line-height: 1.6; }
+      .summary-text { font-size: 10.2px; line-height: 1.5; }
 
       .proj { margin-bottom: 8px; }
       .proj-rule { margin: 7px 0; }
 
-      .p-bullets li, .e-bullets li { font-size: 11px; line-height: 1.45; }
-      .p-stack { font-size: 10px; }
-      .p-sub { font-size: 10px; }
+      .p-bullets li, .e-bullets li { font-size: 9.7px; line-height: 1.45; }
+      .p-stack { font-size: 9.2px; }
+      .p-sub { font-size: 9.3px; }
 
-      .sk-row { font-size: 11px; }
-      .op-title { font-size: 12px; }
-      .op-desc { font-size: 10px; }
+      .sk-row { font-size: 9.6px; }
+      .op-title { font-size: 10px; }
+      .op-desc { font-size: 9px; }
 
       @page {
         size: A4;
@@ -568,14 +570,10 @@
       <div class="proj">
         <div class="p-head">
           <div class="p-title">SmartZone Store - E-commerce Web Application</div>
-          <div class="p-links">
-            <a class="p-link" href="https://github.com/Ginas559/website-chatting" target="_blank">Backend</a>
-            <a class="p-link" href="https://github.com/Ginas559/website-chatting-FE" target="_blank">Frontend</a>
-            <a class="p-link" href="https://github.com/Ginas559/website-chatting-ADMIN" target="_blank">Admin</a>
-          </div>
+          <div class="p-date">May 2026 - Jul 2026</div>
         </div>
         <div class="p-sub">Backend-oriented Fullstack Development</div>
-        <div class="p-stack"><span>Stack:</span> React · Redux Toolkit · Node.js · Express · MongoDB · Socket.IO · JWT · VNPay Sandbox</div>
+        <div class="p-stack"><span>Stack:</span> React · Redux Toolkit · Node.js · Express · MongoDB · Socket.IO · JWT · VNPay Sandbox · <a class="p-link" href="https://github.com/Ginas559/website-chatting" target="_blank">BE</a> · <a class="p-link" href="https://github.com/Ginas559/website-chatting-FE" target="_blank">FE</a> · <a class="p-link" href="https://github.com/Ginas559/website-chatting-ADMIN" target="_blank">Admin</a></div>
         <ul class="p-bullets">
           <li>Built <strong>failure-aware VNPay Sandbox handling</strong> that verifies callbacks and amounts, synchronizes payment/order states, supports retries, and restores vouchers or loyalty points after failed and canceled transactions.</li>
           <li>Designed <strong>secure delivery verification</strong> with hashed/encrypted tokens, expiration, revocation, ownership and role checks, and rate limits.</li>
@@ -588,6 +586,7 @@
       <div class="proj">
         <div class="p-head">
           <div class="p-title">Cinema Management Web Application</div>
+          <div class="p-date">Sep 2025 - Oct 2025</div>
         </div>
         <div class="p-sub">Fullstack Development · Staff Scheduling Module</div>
         <div class="p-stack"><span>Stack:</span> React · Axios · Spring Boot · Spring Data JPA · Spring Security · SQL Server · JWT</div>
@@ -603,13 +602,10 @@
       <div class="proj">
         <div class="p-head">
           <div class="p-title">TimeLux Watch Store - Fullstack E-commerce Platform</div>
-          <div class="p-links">
-            <a class="p-link" href="https://github.com/PhucTien2103/Baitap-06-20-05-2026-website-TimeLux-FE" target="_blank">Frontend</a>
-            <a class="p-link" href="https://github.com/PhucTien2103/Baitap-06-20-05-2026-website-TimeLux-BE" target="_blank">Backend</a>
-          </div>
+          <div class="p-date">May 2026</div>
         </div>
         <div class="p-sub">Fullstack Web Development</div>
-        <div class="p-stack"><span>Stack:</span> React · Vite · Redux Toolkit · Ant Design · Tailwind CSS · Node.js · Express · MongoDB · JWT</div>
+        <div class="p-stack"><span>Stack:</span> React · Vite · Redux Toolkit · Ant Design · Tailwind CSS · Node.js · Express · MongoDB · JWT · <a class="p-link" href="https://github.com/PhucTien2103/Baitap-06-20-05-2026-website-TimeLux-FE" target="_blank">FE</a> · <a class="p-link" href="https://github.com/PhucTien2103/Baitap-06-20-05-2026-website-TimeLux-BE" target="_blank">BE</a></div>
         <ul class="p-bullets">
           <li>Developed a fullstack storefront covering authentication, product discovery, cart, checkout, order history, cancellation, and administrative user management.</li>
           <li>Separated permissions for <strong>Admin, Moderator, and Customer</strong> through protected frontend routes and backend role-based authorization.</li>
@@ -630,6 +626,7 @@
             <div class="op-desc">Cancellation, notifications, and admin statistics</div>
           </div>
           <div class="op-right">
+            <span class="p-date">Feb 2026 - Apr 2026</span>
             <span class="op-tag">Java Servlet · JPA</span>
             <a class="p-link" href="https://github.com/Ginas559/ccvmtptpm-landing-page" target="_blank">GitHub</a>
           </div>
@@ -641,6 +638,7 @@
             <div class="op-desc">Product browsing, profile/address, cart, COD checkout, and order tracking</div>
           </div>
           <div class="op-right">
+            <span class="p-date">Sep 2025 - Nov 2025</span>
             <span class="op-tag">Servlet/JSP · Hibernate</span>
             <a class="p-link" href="https://github.com/Ginas559/shoes-shop" target="_blank">GitHub</a>
           </div>
@@ -687,7 +685,7 @@
         <div class="e-sub" style="margin-bottom:6px;">
           AWS Academy Graduate Training Badges · Issued by Amazon Web Services Training and Certification
         </div>
-        <div style="font-size:11.5px; color:#333; line-height:1.55;">
+        <div class="cert-detail">
           Cloud Foundations, Cloud Developing, Cloud Web Application Builder,
           Cloud Data Pipeline Builder, Data Engineering, Microservices and CI/CD Pipeline Builder
         </div>
