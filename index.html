@@ -466,8 +466,9 @@
         box-shadow: none;
         width: 210mm;
         min-height: 0;
-        padding: 14mm 16mm 14mm;
+        padding: 10mm 16mm 6mm;
         font-size: 11px;
+        zoom: 0.96;
       }
 
       .export-bar {
@@ -482,15 +483,15 @@
       .hdr-name { font-size: 28px; }
       .hdr-role { font-size: 13px; margin-bottom: 7px; }
 
-      .section { margin-bottom: 10px; }
-      .sec-title { margin-bottom: 7px; }
+      .section { margin-bottom: 9px; }
+      .sec-title { margin-bottom: 6px; }
 
       .summary-text { font-size: 12px; line-height: 1.6; }
 
       .proj { margin-bottom: 8px; }
       .proj-rule { margin: 7px 0; }
 
-      .p-bullets li, .e-bullets li { font-size: 11px; line-height: 1.5; }
+      .p-bullets li, .e-bullets li { font-size: 11px; line-height: 1.45; }
       .p-stack { font-size: 10px; }
       .p-sub { font-size: 10px; }
 
@@ -522,7 +523,7 @@
     <!-- HEADER -->
     <div class="hdr">
       <div class="hdr-name">Pham Phuc Tien</div>
-      <div class="hdr-role">Fullstack Web Developer &nbsp;·&nbsp; Year 3 Student &nbsp;·&nbsp; Open to Internship</div>
+      <div class="hdr-role">Software Developer Intern</div>
       <div class="hdr-contact">
         <span><a href="tel:+84795865240">079 586 5240</a></span>
         <span>·</span>
@@ -538,9 +539,9 @@
 
     <!-- PROFILE -->
     <div class="section">
-      <div class="sec-title">Profile</div>
+      <div class="sec-title">Professional Summary</div>
         <p class="summary-text">
-          Third-year Software Engineering student at HCMUTE with hands-on experience building fullstack web applications using React, Node.js/Express, MongoDB, Spring Boot, and Java Servlet/JSP. Worked on academic and team projects involving authentication, role-based access, payment/order workflows, admin dashboards, staff scheduling, and database-backed REST APIs. Seeking an internship/fresher opportunity in frontend, backend, or fullstack web development.
+          Third-year Software Engineering student with hands-on backend and fullstack experience through academic, team, and personal projects. Built REST APIs and database-backed workflows involving authentication, role-based access, payment integration, validation, and error handling with Spring Boot and Node.js/Express. Seeking a Software Developer Internship to contribute to real project delivery and strengthen backend engineering skills.
         </p>
     </div>
 
@@ -552,16 +553,16 @@
           <div class="e-org">Ho Chi Minh City University of Technology and Education</div>
           <div class="e-date">Sep 2023 - Present</div>
         </div>
-        <div class="e-sub">B.Eng. Information Technology · Major: Software Engineering</div>
+        <div class="e-sub">B.Eng. in Information Technology · Major in Software Engineering <span class="gpa-inline">GPA: 7.95/10</span></div>
         <ul class="e-bullets">
-          <li>Completed coursework and team projects in web programming, software engineering, database systems, cloud fundamentals, and Java/JavaScript-based application development.</li>
+          <li><strong>Selected Coursework:</strong> Cloud Computing (9.7), Artificial Intelligence (9.0), Software Engineering (8.7), Web Programming (8.6), Object-Oriented Programming (8.6), E-commerce (8.5), Data Structures and Algorithms (8.5), Database Systems (8.0).</li>
         </ul>
       </div>
     </div>
 
     <!-- PROJECTS -->
     <div class="section">
-      <div class="sec-title">Projects</div>
+      <div class="sec-title">Selected Projects</div>
 
       <!-- SmartZone Store -->
       <div class="proj">
@@ -573,11 +574,12 @@
             <a class="p-link" href="https://github.com/Ginas559/website-chatting-ADMIN" target="_blank">Admin</a>
           </div>
         </div>
-        <div class="p-stack"><span>Stack:</span> React · Redux Toolkit · Node.js · Express · MongoDB · Socket.IO · JWT · VNPay · Nodemailer</div>
+        <div class="p-sub">Team Project · Backend-oriented Fullstack Contributor</div>
+        <div class="p-stack"><span>Stack:</span> React · Redux Toolkit · Node.js · Express · MongoDB · Socket.IO · JWT · VNPay Sandbox</div>
         <ul class="p-bullets">
-          <li>Implemented <strong>forgot-password OTP</strong> flow and documented/tested the feature with Postman collection.</li>
-          <li>Built <strong>checkout and order tracking</strong> APIs/UI; improved VNPay payment status synchronization and retry behavior.</li>
-          <li>Added <strong>admin order management</strong>, delivery QR verification, voucher selection, loyalty points, and refund handling for canceled orders.</li>
+          <li>Built <strong>failure-aware VNPay Sandbox handling</strong> that verifies callbacks and amounts, synchronizes payment/order states, supports retries, and restores vouchers or loyalty points after failed and canceled transactions.</li>
+          <li>Designed <strong>secure delivery verification</strong> with hashed/encrypted tokens, expiration, revocation, ownership and role checks, and rate limits.</li>
+          <li>Delivered connected customer/admin workflows for OTP recovery, checkout, order tracking, cancellation, vouchers, loyalty rewards, notifications, and delivery.</li>
         </ul>
       </div>
       <hr class="proj-rule" />
@@ -586,16 +588,13 @@
       <div class="proj">
         <div class="p-head">
           <div class="p-title">Cinema Management Web Application</div>
-          <div class="p-links">
-            <a class="p-link" href="https://github.com/Minh1billion/cinema-management-web-frontend" target="_blank">Frontend</a>
-            <a class="p-link" href="https://github.com/Minh1billion/cinema-management-web-backend" target="_blank">Backend</a>
-          </div>
         </div>
+        <div class="p-sub">Team Project · Fullstack Contributor, Staff Scheduling Module</div>
         <div class="p-stack"><span>Stack:</span> React · Axios · Spring Boot · Spring Data JPA · Spring Security · SQL Server · JWT</div>
         <ul class="p-bullets">
-          <li>Developed <strong>staff shift scheduling</strong> features, including staff registration/cancellation and weekly schedule operations.</li>
-          <li>Built and refined <strong>MyShiftTimeline</strong> UI so staff can view registered shifts clearly by week/time.</li>
-          <li>Updated Spring Boot shift APIs, service logic, repository usage, and custom exception handling for clearer API responses.</li>
+          <li>Developed staff self-service workflows for viewing, registering, and canceling shifts through a weekly timeline integrated with Spring Boot APIs.</li>
+          <li>Improved scheduling reliability by fixing undefined weekly-schedule data and validating invalid registration and cancellation operations.</li>
+          <li>Added staff notifications and centralized business-exception handling so frontend users receive clear feedback instead of generic server errors.</li>
         </ul>
       </div>
       <hr class="proj-rule" />
@@ -609,11 +608,12 @@
             <a class="p-link" href="https://github.com/PhucTien2103/Baitap-06-20-05-2026-website-TimeLux-BE" target="_blank">Backend</a>
           </div>
         </div>
+        <div class="p-sub">Personal Project · Fullstack Development</div>
         <div class="p-stack"><span>Stack:</span> React · Vite · Redux Toolkit · Ant Design · Tailwind CSS · Node.js · Express · MongoDB · JWT</div>
         <ul class="p-bullets">
-          <li>Built authenticated storefront with product catalog, search, filters, sorting, pagination, product detail, cart, checkout, and order flows.</li>
-          <li>Implemented role-based flows for <strong>Admin, Moderator, and User</strong>, including protected routes and user management screens.</li>
-          <li>Developed backend APIs using Express, Mongoose models, JWT authentication, validators, rate limiting, and OTP email flow.</li>
+          <li>Developed a fullstack storefront covering authentication, product discovery, cart, checkout, order history, cancellation, and administrative user management.</li>
+          <li>Separated permissions for <strong>Admin, Moderator, and Customer</strong> through protected frontend routes and backend role-based authorization.</li>
+          <li>Hardened authentication and API workflows with JWT access/refresh tokens, OTP email verification, request validation, and rate limiting.</li>
         </ul>
       </div>
 
@@ -621,13 +621,13 @@
 
     <!-- OTHER PROJECTS -->
     <div class="section">
-      <div class="sec-title">Other Projects</div>
+      <div class="sec-title">Additional Projects</div>
       <div class="other-proj-list">
 
         <div class="op-row">
           <div class="op-left">
             <div class="op-title">Employee Leave Management System</div>
-            <div class="op-desc">Leave request/approval system with notifications, cancellation, and admin statistics</div>
+            <div class="op-desc">Cancellation, notifications, and admin statistics</div>
           </div>
           <div class="op-right">
             <span class="op-tag">Java Servlet · JPA</span>
@@ -638,7 +638,7 @@
         <div class="op-row">
           <div class="op-left">
             <div class="op-title">Shoes Shop</div>
-            <div class="op-desc">Java web e-commerce app with VNPay, product reviews, wishlist, and recently viewed products</div>
+            <div class="op-desc">Product browsing, profile/address, cart, COD checkout, and order tracking</div>
           </div>
           <div class="op-right">
             <span class="op-tag">Servlet/JSP · Hibernate</span>
@@ -654,7 +654,7 @@
       <div class="sec-title">Technical Skills</div>
       <div class="sk-list">
         <div class="sk-row">
-          <span class="sk-label">Language</span>
+          <span class="sk-label">Languages</span>
           <span class="sk-val">JavaScript, Java, SQL</span>
         </div>
         <div class="sk-row">
@@ -663,15 +663,19 @@
         </div>
         <div class="sk-row">
           <span class="sk-label">Backend</span>
-          <span class="sk-val">Node.js, Express, Spring Boot, Java Servlet/JSP, Spring Data JPA, Spring Security, Hibernate/JPA</span>
+          <span class="sk-val">Node.js, Express, Spring Boot, Java Servlet/JSP, REST API development</span>
         </div>
         <div class="sk-row">
-          <span class="sk-label">Database</span>
-          <span class="sk-val">MongoDB, SQL Server, Mongoose, JPA/Hibernate ORM</span>
+          <span class="sk-label">Data & ORM</span>
+          <span class="sk-val">MongoDB, SQL Server, Mongoose, Spring Data JPA, Hibernate</span>
         </div>
         <div class="sk-row">
           <span class="sk-label">Tools</span>
-          <span class="sk-val">Git, GitHub, Postman, Cypress, Docker basics, AWS Academy labs, VNPay integration, JWT authentication</span>
+          <span class="sk-val">Git, GitHub, Postman, Cypress, Docker fundamentals</span>
+        </div>
+        <div class="sk-row">
+          <span class="sk-label">Concepts</span>
+          <span class="sk-val">JWT authentication, role-based access control, validation, exception handling, VNPay Sandbox integration</span>
         </div>
       </div>
     </div>
@@ -681,7 +685,7 @@
       <div class="sec-title">Certifications</div>
       <div class="entry">
         <div class="e-sub" style="margin-bottom:6px;">
-          AWS Academy Graduate Training Badges - Amazon Web Services Training and Certification
+          AWS Academy Graduate Training Badges · Issued by Amazon Web Services Training and Certification
         </div>
         <div style="font-size:11.5px; color:#333; line-height:1.55;">
           Cloud Foundations, Cloud Developing, Cloud Web Application Builder,
