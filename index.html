@@ -163,6 +163,15 @@
       color: var(--ink);
     }
 
+    .e-school {
+      text-transform: uppercase;
+    }
+
+    .e-degree {
+      font-weight: 500;
+      text-transform: none;
+    }
+
     .e-date {
       font-family: 'Poppins', Arial, sans-serif;
       font-size: 9.5px;
@@ -234,8 +243,16 @@
     .p-title {
       font-family: 'Poppins', Arial, sans-serif;
       font-size: 11.5px;
-      font-weight: 700;
       color: var(--ink);
+    }
+
+    .p-name {
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    .p-role {
+      font-weight: 600;
     }
 
     .p-links {
@@ -552,10 +569,9 @@
       <div class="sec-title">Education</div>
       <div class="entry">
         <div class="e-head">
-          <div class="e-org">Ho Chi Minh City University of Technology and Education</div>
+          <div class="e-org"><span class="e-school">HCMC University of Technology and Education (HCMUTE)</span><span class="e-degree"> | B.Eng. Software Eng. | GPA: 7.95/10</span></div>
           <div class="e-date">Sep 2023 - Present</div>
         </div>
-        <div class="e-sub">B.Eng. in Information Technology · Major in Software Engineering <span class="gpa-inline">GPA: 7.95/10</span></div>
         <ul class="e-bullets">
           <li><strong>Selected Coursework:</strong> Cloud Computing (9.7), Artificial Intelligence (9.0), Software Engineering (8.7), Web Programming (8.6), Object-Oriented Programming (8.6), E-commerce (8.5), Data Structures and Algorithms (8.5), Database Systems (8.0).</li>
         </ul>
@@ -564,15 +580,14 @@
 
     <!-- PROJECTS -->
     <div class="section">
-      <div class="sec-title">Selected Projects</div>
+      <div class="sec-title">Projects</div>
 
       <!-- SmartZone Store -->
       <div class="proj">
         <div class="p-head">
-          <div class="p-title">SmartZone Store - E-commerce Web Application</div>
+          <div class="p-title"><span class="p-name">SmartZone Store</span><span class="p-role"> | Backend-oriented Fullstack Developer</span></div>
           <div class="p-date">May 2026 - Jul 2026</div>
         </div>
-        <div class="p-sub">Backend-oriented Fullstack Development</div>
         <div class="p-stack"><span>Stack:</span> React · Redux Toolkit · Node.js · Express · MongoDB · Socket.IO · JWT · VNPay Sandbox · <a class="p-link" href="https://github.com/Ginas559/website-chatting" target="_blank">BE</a> · <a class="p-link" href="https://github.com/Ginas559/website-chatting-FE" target="_blank">FE</a> · <a class="p-link" href="https://github.com/Ginas559/website-chatting-ADMIN" target="_blank">Admin</a></div>
         <ul class="p-bullets">
           <li>Built <strong>failure-aware VNPay Sandbox handling</strong> that verifies callbacks and amounts, synchronizes payment/order states, supports retries, and restores vouchers or loyalty points after failed and canceled transactions.</li>
@@ -585,10 +600,9 @@
       <!-- Cinema -->
       <div class="proj">
         <div class="p-head">
-          <div class="p-title">Cinema Management Web Application</div>
+          <div class="p-title"><span class="p-name">Cinema Management Web Application</span><span class="p-role"> | Fullstack Developer, Staff Scheduling Module</span></div>
           <div class="p-date">Sep 2025 - Oct 2025</div>
         </div>
-        <div class="p-sub">Fullstack Development · Staff Scheduling Module</div>
         <div class="p-stack"><span>Stack:</span> React · Axios · Spring Boot · Spring Data JPA · Spring Security · SQL Server · JWT</div>
         <ul class="p-bullets">
           <li>Developed staff self-service workflows for viewing, registering, and canceling shifts through a weekly timeline integrated with Spring Boot APIs.</li>
@@ -601,10 +615,9 @@
       <!-- TimeLux -->
       <div class="proj">
         <div class="p-head">
-          <div class="p-title">TimeLux Watch Store - Fullstack E-commerce Platform</div>
+          <div class="p-title"><span class="p-name">TimeLux Watch Store</span><span class="p-role"> | Fullstack Developer</span></div>
           <div class="p-date">May 2026</div>
         </div>
-        <div class="p-sub">Fullstack Web Development</div>
         <div class="p-stack"><span>Stack:</span> React · Vite · Redux Toolkit · Ant Design · Tailwind CSS · Node.js · Express · MongoDB · JWT · <a class="p-link" href="https://github.com/PhucTien2103/Baitap-06-20-05-2026-website-TimeLux-FE" target="_blank">FE</a> · <a class="p-link" href="https://github.com/PhucTien2103/Baitap-06-20-05-2026-website-TimeLux-BE" target="_blank">BE</a></div>
         <ul class="p-bullets">
           <li>Developed a fullstack storefront covering authentication, product discovery, cart, checkout, order history, cancellation, and administrative user management.</li>
